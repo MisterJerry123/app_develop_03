@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/set3"
+
+
+
+
+    >
+
+    <TextView
+        android:id="@+id/uppermagin"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="여백"
+        android:visibility="invisible"
+        android:textAlignment="center"
+        android:layout_weight="5"
+
+        android:textColor="@color/white"
+        android:textSize="18sp"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/linearframe1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+
+        <TextView
+            android:id="@+id/setdate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="날짜"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/dateTextColor"
+            android:textSize="25sp" />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="19℃ 서울특별시 광진구"
+            android:layout_marginRight="30dp"
+            android:textColor="@color/weatherTextColor"
+            android:textSize="10sp"
+
+            android:gravity="bottom|end"
+
+
+
+
+            />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="오늘의 응원 한 줄"
+        android:textColor="@color/white"
+        android:layout_marginLeft="30dp"
+        android:textSize="10sp"
+
+        />
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_weight="2"
+
+        style="@style/edittextnounderline"
+        android:background="@color/saying"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+
+
+
+        android:inputType="none"
+        android:text="그래도 해야지 어떡해!"
+        android:textColor="@color/white"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="100"
+        >
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+
+            />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/character"
+            android:paddingRight="10sp"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:background="@color/white"
+        android:textAlignment="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp"
+        android:layout_weight="1"
+
+
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+
+            >
+
+
+            <TextView
+                android:id="@+id/dis1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="거리"
+                android:textColor="@color/indicatorTextColor"
+
+                android:textAlignment="center"
+                />
+
+            <TextView
+                android:id="@+id/dis2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="km"
+                android:textColor="@color/indicatorTextColor2"
+                android:textAlignment="center"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+
+
+            <TextView
+                android:id="@+id/hour1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="시간"
+                android:textColor="@color/indicatorTextColor"
+                android:textAlignment="center"
+                />
+
+            <TextView
+                android:id="@+id/hour2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="h m"
+                android:textColor="@color/indicatorTextColor2"
+                android:textAlignment="center"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+
+
+            <TextView
+                android:id="@+id/calorie1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="칼로리"
+                android:textColor="@color/indicatorTextColor"
+                android:textAlignment="center"
+                />
+
+            <TextView
+                android:id="@+id/calorie2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kcal"
+                android:textColor="@color/indicatorTextColor2"
+                android:textAlignment="center"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/set2"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/menu1"
+        app:shapeAppearanceOverlay="@style/RoundedBottomNavBar" />
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/exersice"
+        android:icon="@drawable/exercise"
+        android:title="exercise"
+
+        />
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/food"
+        android:icon="@drawable/food"
+        android:title="food" />
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/home"
+        android:icon="@drawable/home"
+        android:title="home"
+        android:checked="true"
+        />
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/schedule"
+        android:icon="@drawable/schedule"
+        android:title="schedule" />
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mypage"
+        android:icon="@drawable/mypage"
+        android:title="my page" />
+</menu>

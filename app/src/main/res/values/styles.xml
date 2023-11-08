@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="RoundedBottomNavBar">
+        <item name="cornerFamily">rounded</item>
+
+        <item name="cornerSizeTopLeft">23dp</item>
+        <item name="cornerSizeTopRight">23dp</item>
+    </style>
+
+
+    <style name="edittextnounderline">
+        <item name="android:background">@null</item>
+    </style>
+
+<style name="roundedButton">
+    <item name="cornerFamily">rounded</item>
+    
+</style>
+
+
+</resources>
